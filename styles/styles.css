@@ -97,7 +97,7 @@ body {
 
 }
 
-@media (max-width: 1080px){
+@media screen and (max-width: 1080px){
     .responsive-livestream{
         height: 400px;
     }
@@ -132,12 +132,15 @@ h1 {
     text-align: left;
 }
 
-@media (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
+    .par-watch-live{
+        width: 300px;
+    }
 h1 {
     font-size: 1.5em;
 }
     p {
-        font-size: 0.8em;
+        font-size: 1em;
 
     }
 }
