@@ -133,14 +133,23 @@ h1 {
 }
 
 @media screen and (max-width: 1080px) {
+
     .par-watch-live{
+        height: 120px;
         width: 300px;
     }
-h1 {
+
+    h1 {
     font-size: 1.5em;
-}
+
+    }
     p {
         font-size: 1em;
 
     }
+}
+
+/* ------------------ SECTION 1 KIJK LIVE MEE ------------------ */
+.section-how-does-it-works {
+    background-color: var(--green);
 }
