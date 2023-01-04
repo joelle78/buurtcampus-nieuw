@@ -1,0 +1,142 @@
+:root {
+    /* COLORS */
+    --green: #4E7141; /*158467*/
+    --broken-white: #EEF2E6;
+    --purple-blue: #333568;
+    --orange: #f26f20;
+    --white: #fff;
+    --dark-white: #ddd;
+    --grey: #f1f1f1;
+    --black: #000000;
+
+    /* FONT SIZES*/
+    --small: 1.2rem;
+    --medium: 1.5rem;
+    --large: 2.5rem;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial';
+}
+
+/* ------------------ SECTION NAV-BAR ------------------*/
+.topnav {
+    overflow: hidden;
+    background-color: var(--green);
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: var(--white);
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 2em;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    color: var(--black);
+}
+
+.topnav a.active-navbar {
+    color: var(--black);
+}
+
+.topnav .icon  {
+    display: none;
+    padding-right: 1.5em;
+}
+
+@media screen and (max-width: 800px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon  {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon  {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* ------------------ SECTION 1 KIJK LIVE MEE ------------------ */
+.section-livestream {
+    background-color: var(--broken-white);
+}
+
+.wrapper-livestream{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-row-gap: 1em;;
+    grid-column-gap: 1em;
+}
+
+
+.responsive-livestream{
+    /* text-align: center; */
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+@media (max-width: 800px){
+    .responsive-livestream{
+        width: 400px;
+    }
+}
+
+
+.responsive-iframe-livestream {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 100%;
+    margin-top: 1em;
+    margin-left: 1em;
+    border-radius: 5px;
+
+}
+
+.par-watch-live{
+    grid-column: 2/2;
+    grid-row: 1/1;
+    margin-right: 1.5em;
+}
+
+h1 {
+    color: var(--purple-blue);
+    font-weight: 800;
+    font-size: var(--large);
+    text-align: left;
+}
+
+@media (max-width: 800px) {
+h1 {
+    font-size: var(--medium);
+}
+    p {
+        font-size: 1rem;
+        width: 300px;
+    }
+}
