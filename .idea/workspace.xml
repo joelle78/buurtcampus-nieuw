@@ -25,6 +25,12 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/carousel" />
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/buurtcampus-nieuw/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -44,7 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672869375088</updated>
       <workItem from="1672869377444" duration="5031000" />
-      <workItem from="1672950080613" duration="2380000" />
+      <workItem from="1672950080613" duration="7003000" />
     </task>
     <servers />
   </component>
