@@ -10,6 +10,7 @@
     --black: #000000;
 
     /* FONT SIZES*/
+    --xs-small: 1rem;
     --small: 1.2rem;
     --medium: 1.5rem;
     --large: 2.5rem;
@@ -18,7 +19,7 @@
 body {
     background-color: var(--broken-white);
     margin: 0;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
 }
 
 /* ------------------ SECTION NAV-BAR ------------------*/
@@ -136,10 +137,10 @@ h1 {
     }
 
     h1 {
-    font-size: 1.5em;
+    font-size: var(--medium);
     }
     p {
-        font-size: 1em;
+        font-size: var(--xs-small);
     }
 }
 
@@ -149,16 +150,16 @@ h1 {
 }
 
 h2{
-    font-size: 54px;
-    text-transform: uppercase;
+    font-size: var(--large);
     text-align: center;
-    color: #fff;
-    margin-bottom: 0;
+    color: var(--white);
+    padding-top: 1em
 }
 
-#css {
-    color: yellow;
-
+@media screen and (max-width: 1080px) {
+    h2 {
+        font-size: var(--medium);
+    }
 }
 
 .carousel-wrapper{
@@ -167,7 +168,14 @@ h2{
     width: 800px;
     display: block;
     margin: 50px auto;
-    border: 2px solid black;
+
+}
+
+@media screen and (max-width: 1080px){
+    .carousel-wrapper {
+        height: 300px;
+        width: 600px;
+    }
 }
 
 .carousel-item{
@@ -179,13 +187,14 @@ h2{
     padding: 25px 50px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    border-radius: 4px;
 }
 
 .arrow{
     border: solid black;
     border-width: 0 3px 3px 0;
     display: inline-block;
-    padding: 12px;
+    padding: 5px;
 }
 
 .arrow-prev{
@@ -210,17 +219,22 @@ h2{
     z-index: 2;
     opacity: 1;
     background-color: white;
-    background-size: cover;
+
 }
 
 .item-2{
     background-color: red;
-    background-size: cover;
+
 }
 
 .item-3{
     background-color: yellow;
-    background-size: cover;
+
+}
+
+.item-4{
+    background-color: pink;
+
 }
 
 :target ~ .item-1{
@@ -234,3 +248,8 @@ h2{
     z-index: 3;
     opacity: 1;
 }
+
+.flex-container-car-1{
+    display: flex;
+}
+
