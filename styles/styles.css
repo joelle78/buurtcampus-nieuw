@@ -187,6 +187,37 @@ h2 {
         height: 300px;
         width: 600px;
     }
+
+    .section-how-does-it-works img {
+        width: 5em;
+    }
+
+    .section-how-does-it-works p {
+        width: 300px;
+        font-size: var(--small);
+    }
+}
+
+.flex-container-car-1, .flex-container-car-2, .flex-container-car-3 {
+    width: 650px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    padding-left: 3em;
+}
+
+@media screen and (max-width: 1080px){
+    .flex-container-car-1, .flex-container-car-2, .flex-container-car-3{
+        width: 450px;
+        height: 250px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2em;
+        padding-left: 3em;
+    }
 }
 
 .carousel-item{
@@ -253,15 +284,7 @@ h2 {
     opacity: 1;
 }
 
-.flex-container-car-1, .flex-container-car-2, .flex-container-car-3 {
-    width: 650px;
-    height: 350px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2em;
-    padding-left: 3em;
-}
+
 
 
 
