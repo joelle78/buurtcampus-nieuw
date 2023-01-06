@@ -144,10 +144,10 @@ h1 {
     }
 }
 
-/* ------------------ SECTION 1 HOE WERKT HET? ------------------ */
+/* ------------------ SECTION 2 HOE WERKT HET? ------------------ */
 .section-how-does-it-works {
     background-color: var(--green);
-    padding-bottom: 10em;
+    padding-bottom: 4em;
 }
 
 .section-how-does-it-works p {
@@ -204,7 +204,7 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1.5em;
+    gap: 2em;
     padding-left: 3em;
 }
 
@@ -215,7 +215,7 @@ h2 {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 2em;
+        gap: 1em;
         padding-left: 3em;
     }
 }
@@ -284,7 +284,94 @@ h2 {
     opacity: 1;
 }
 
+/* ------------------ SECTION 3 VISIE KAART FLIP ------------------ */
+.section-vision{
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
 
+.section-vision img{
+    width: 13em;
+}
+
+.section-vision p {
+    font-size: var(--medium);
+    color: var(--purple-blue);
+}
+
+.flex-container-vision{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+}
+
+.vision-card-1, .vision-card-2, .vision-card-3 {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 325px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* CARD FLIP ANIMATION */
+
+/* The flip card container  */
+.flip-card {
+    background-color: transparent;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border: 1px solid var(--grey);
+    perspective: 1000px;
+}
+
+/* position the front and back side */
+.flip-card-inner {
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip*/
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-radius: 10px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    /* background-color: #bbb; */
+    color: var(--black);
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: var(--purple-blue);
+    color: var(--white);
+    transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+    color: var(--white);
+}
 
 
 
