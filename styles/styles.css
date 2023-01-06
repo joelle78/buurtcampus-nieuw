@@ -314,7 +314,23 @@ h2 {
     width: 325px;
     justify-content: center;
     align-items: center;
+}
 
+@media screen and (max-width: 1080px){
+    .flex-container-vision {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-vision img{
+        width: 8em;
+    }
+
+    .section-vision p{
+        font-size: var(--small);
+    }
 }
 
 /* CARD FLIP ANIMATION */
@@ -328,6 +344,14 @@ h2 {
     border: 1px solid var(--grey);
     perspective: 1000px;
 }
+
+@media screen and (max-width: 1080px){
+    .flip-card {
+        width: 15em;
+        height: 15em;
+    }
+}
+
 
 /* position the front and back side */
 .flip-card-inner {
@@ -371,6 +395,12 @@ h2 {
 
 .flip-card-back p {
     color: var(--white);
+}
+
+@media screen and (max-width: 1080px){
+    .flip-card-back p {
+        font-size: var(--small);
+    }
 }
 
 
