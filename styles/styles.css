@@ -410,6 +410,26 @@ h2 {
     background-color: var(--green);
 }
 
+h6 {
+    font-size: var(--small);
+    color: var(--white);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1.5em;
+    margin: 0;
+}
+
+.flex-container-socials{
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding-left: 2em;
+}
+
+.flex-container-socials img {
+    width: 2em;
+}
+
 .flex-container-footer {
     display: flex;
     flex-direction: row;
