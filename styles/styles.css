@@ -42,11 +42,14 @@ body {
 }
 
 .topnav a:hover {
-    color: var(--black);
+    color: var(--white);
+    font-weight: bold;
 }
 
 .topnav a.active-navbar {
-    color: var(--black);
+    background-color: var(--green);
+    color: var(--white);
+    font-weight: bold;
 }
 
 .topnav .icon  {
@@ -74,6 +77,19 @@ body {
         float: none;
         display: block;
         text-align: left;
+    }
+}
+
+.logo-navbar{
+    width: 5em;
+    float: right;
+    padding-top: 1em;
+    padding-right: 2em;
+}
+
+@media screen and (max-width: 1080px){
+    .logo-navbar{
+        display: none;
     }
 }
 
@@ -430,6 +446,17 @@ h6 {
     width: 2em;
 }
 
+@media screen and (max-width: 1080px){
+    h6 {
+        color: var(--white);
+        font-size: var(--xs-small);
+    }
+
+    .flex-container-socials img{
+        width: 1.5em;
+    }
+}
+
 .flex-container-footer {
     display: flex;
     flex-direction: row;
@@ -445,6 +472,33 @@ flex-container-footer img{
     }
 }
 
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* ------------------ CONTACT ------------------ */
+/* -------------------- PAGE ------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+.section-google-maps h1 {
+    padding-top: 1em;
+    padding-left: 1em;
+
+}
+.flex-container-google-maps{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-container-google-maps ul{
+    list-style-type: none;
+}
+
+.iframe-google-maps{
+    width: 850px;
+    height: 500px;
+    padding-top: 1em;
+    padding-left: 2em;
+}
 
 
 
